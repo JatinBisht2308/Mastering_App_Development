@@ -1,13 +1,16 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text,TouchableOpacity, Image } from 'react-native'
 
 import styles from './popularjobcard.style'
 
 const PopularJobCard = () => {
   return (
-    <View>
-      <Text>Influencer Marketing</Text>
-    </View>
+    <TouchableOpacity
+    style={styles.conatiner(selectedJob,item)}
+    onPress={() => handleCardPress(item)}
+    >
+
+    </TouchableOpacity>
   )
 }
 

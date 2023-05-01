@@ -41,3 +41,5 @@ const useFetch = (endpoint, query) => {
   };
   return { data, isloading, error, reFetch };
 };
+
+export default useFetch;
